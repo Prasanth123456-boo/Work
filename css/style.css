@@ -90,7 +90,7 @@ body::-webkit-scrollbar {
 }
 
 .social-icon i {
-	font-size: 20px;
+	font-size: 16px;
 }
 
 hr.solid {
@@ -128,9 +128,16 @@ hr.solid {
 	display: grid;
 	place-content: center;
 	cursor: pointer;
+	transition: color 0.3s ease, background-color 0.3s ease;
+
 
 }
-
+.nav-icons.active {
+    color: #eba611; /* Change to the color you want */
+    background-color: #f2f2f2; /* Change the background color or add any other styles */
+	border-color: #eba611;
+	border: solid 1px ;
+}
 .logo-skill {
 	width: 100px;
 	height: 100px;
@@ -177,4 +184,11 @@ hr.solid {
 
 .contact-text:focus, .contact-text:active {
     border-color: #eba611; /* Changes border color on focus and active */
+}
+
+
+
+.custom-icon:hover{
+background-color: #eba611 !important;
+transition: 1s ease !important;
 }
