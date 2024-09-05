@@ -1,3 +1,17 @@
+$(".menu").on('click', function () {
+
+    var selector = $(".body")
+  
+    if (selector.hasClass('open')) {
+  
+      selector.removeClass('open');
+    } else {
+  
+      selector.addClass('open');
+    }
+  });
+  
+
 document.querySelectorAll('.nav-icons').forEach(icon => {
     icon.addEventListener('click', function() {
         // Remove 'active' class from all icons
@@ -13,3 +27,5 @@ document.querySelectorAll('.nav-icons').forEach(icon => {
         }
     });
 });
+
+

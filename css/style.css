@@ -225,21 +225,24 @@ transition: 1s ease !important;
 
 @media screen and (max-width: 1300px) {
     .menu {
-        display: flex;
-        z-index: 999;
+		left: 10%;
+		top: 40px;
+		position: absolute;
+        display: flex !important;
+        z-index: 1000 !important;
     }
 
-    /* .contain-1 {
-        position: absolute;
+    .contain-1 {
+        position: absolute !important;
         right: 0;
         top: 0;
-        width: 100%;
+        width: 30%;
         height: 100vh;
         background: white;
-        z-index: 99;
-        display: none;
+        z-index: 99 !important;
+        display: none !important;
         transition: 1s ease;
-    } */
+    }
 
 	.contain-4{
 		display: block;
@@ -247,8 +250,8 @@ transition: 1s ease !important;
 	.contain-3{
 		display: none;
 	}
-    .open .nav-bar {
-        display: block;
+    .open .contain-1 {
+        display: block !important;
     }
 
     .menu span:nth-child(2) {
