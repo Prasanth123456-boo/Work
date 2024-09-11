@@ -18,6 +18,12 @@ body::-webkit-scrollbar {
 	display: none;
 }
 
+.link-icon{
+	text-decoration: none !important;
+	color: #000;
+	
+}
+
 .main-wrap {
 	display: flex !important;
 	justify-content: center !important;
